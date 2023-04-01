@@ -1,0 +1,22 @@
+@use '../../styles/variables.scss' as variables;
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: variables.$dark-grey;
+  background-color: variables.$accent;
+  border-radius: variables.$border-radius;
+  padding: variables.$spacing-sm;
+  transition: background-color 200ms ease, scale 200ms ease;
+
+  &:hover {
+    background-color: darken($color: variables.$accent, $amount: 10);
+    scale: 1.05;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}

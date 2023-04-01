@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// Colors
+$primary: #00FF7F;
+$accent: #b9590a;
+$dark-grey: #102129;
+$white: #fafafa;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;
+
+// Fonts
+$primary-font: 'Poppins';
+
+// Border
+$border-radius: 4px;
+
+
+// Animations
+$input-border-bottom-animation: input-border-bottom-animation 200ms ease;
+
+
+
+@keyframes input-border-bottom-animation {
+    from {
+        border-bottom: 1px solid $transparent
+    }
+    to {
+        border-bottom: 1px solid $accent;
+    }
+}
+

@@ -1,0 +1,44 @@
+@use './styles/variables.scss' as variables;
+
+:root {
+  font-family: variables.$primary-font, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: variables.$primary;
+  background-color: variables.$dark-grey;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  max-width: 1280px;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: variables.$primary-font;
+}
+
+input {
+  height: 28px;
+  font-size: 16px;
+  border: 1px transparent solid;
+  font-family: variables.$primary-font;
+  padding: variables.$spacing-sm;
+  border-radius: variables.$border-radius;
+  
+
+  &:focus {
+    outline: none;
+    border: 1px variables.$accent solid;
+  }
+}

@@ -1,0 +1,25 @@
+@use '../../styles/variables.scss' as variables;
+
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: variables.$border-radius;
+    padding: variables.$spacing-lg;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: variables.$spacing-md;
+  }
+}
