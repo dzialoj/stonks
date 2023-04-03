@@ -2,7 +2,7 @@
 
 // Colors
 $primary: #00FF7F;
-$accent: #b9590a;
+$accent: #dd3594;
 $dark-grey: #102129;
 $white: #fafafa;
 
@@ -27,7 +27,7 @@ $input-border-bottom-animation: input-border-bottom-animation 200ms ease;
 
 @keyframes input-border-bottom-animation {
     from {
-        border-bottom: 1px solid $transparent
+        border-bottom: 1px solid transparent
     }
     to {
         border-bottom: 1px solid $accent;

@@ -1,0 +1,40 @@
+@use '../../../../styles/variables.scss' as variables;
+
+.ticker-container {
+  width: 150px;
+  border-radius: variables.$border-radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: variables.$spacing-md;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease;
+  gap: variables.$spacing-sm;
+  background-color: variables.$primary;
+  color: variables.$dark-grey;
+
+  &:hover {
+    background-color: lighten($color: variables.$dark-grey, $amount: 10);
+    color: variables.$white;
+  }
+
+  .stock {
+    &-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &-value {
+      font-size: 1rem;
+      font-weight: 500;
+
+      &-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

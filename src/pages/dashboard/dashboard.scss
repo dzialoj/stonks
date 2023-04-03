@@ -1,0 +1,19 @@
+@use '../../styles/mixins.scss' as mixins;
+@use '../../styles/variables.scss' as variables;
+
+.dashboard-container {
+  flex: 1;
+  margin: variables.$spacing-lg;
+
+  .table {
+    height: 400px;
+  }
+
+  .tickers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: variables.$spacing-md;
+  }
+}

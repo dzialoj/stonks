@@ -67,13 +67,14 @@ export default function useApi<T>({
    * @description Reusable api request function that generates request based off of parameters, handles errors, and returns data in the specified type.
    */
   const request = async (body?: { [key: string]: unknown }): Promise<void> => {
-    const requestUrl = new URL(`${process.env.REACT_APP_API_BASE_URL}${url}`);
+    // const requestUrl = new URL(`${import.meta.env.REACT_APP_API_BASE_URL}${url}`);
+    const requestUrl = url;
 
-    if (queryParams) {
-      Object.entries(queryParams).forEach(([k, v]) => {
-        requestUrl.searchParams.append(k, v.toString());
-      });
-    }
+    // if (queryParams) {
+    //   Object.entries(queryParams).forEach(([k, v]) => {
+    //     requestUrl.searchParams.append(k, v.toString());
+    //   });
+    // }
 
     try {
       setLoading(true);

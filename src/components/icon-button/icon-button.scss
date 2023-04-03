@@ -1,0 +1,15 @@
+@use '../../styles/variables.scss' as variables;
+
+.icon-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+  font-size: 24px;
+  color: variables.$accent;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

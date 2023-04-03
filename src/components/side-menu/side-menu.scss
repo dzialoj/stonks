@@ -1,0 +1,31 @@
+@use '../../styles/variables.scss' as variables;
+@use '../../styles/mixins.scss' as mixins;
+
+.side-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: variables.$spacing-md;
+  background-color: lighten($color: variables.$dark-grey, $amount: 10);
+  height: 100vh;
+  width: 33px;
+  gap: variables.$spacing-md;
+  transition: width 400ms ease;
+
+  &-open {
+    width: 50%;
+    overflow: hidden;
+
+    @include mixins.screen-tablet-portrait {
+      width: 20%;
+    }
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: variables.$spacing-sm;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "currentNetWorth": 7000,
+  "netWorthHistory": [
+    {
+      "month": "January",
+      "year": 2023,
+      "netWorth": 1000
+    },
+    {
+      "month": "February",
+      "year": 2023,
+      "netWorth": 4000
+    },
+    {
+      "month": "March",
+      "year": 2023,
+      "netWorth": 3000
+    },
+    {
+      "month": "April",
+      "year": 2023,
+      "netWorth": 7000
+    }
+  ],
+  "stockTickers": [
+    {
+      "stockName": "TSLA",
+      "stockValue": 100,
+      "stockShares": 100,
+      "stockValueHistorical": [{ "value": 10 }, { "value": 20 }, { "value": 30 }]
+    },
+    {
+      "stockName": "FZROX",
+      "stockValue": 15.4,
+      "stockShares": 200,
+      "stockValueHistorical": [{ "value": 10 }, { "value": 30 }, { "value": 20 }, { "value": 50 }]
+    }
+  ]
+}

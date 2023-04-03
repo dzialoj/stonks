@@ -16,7 +16,6 @@
 }
 
 #root {
-  max-width: 1280px;
   height: 100vh;
 }
 
@@ -26,12 +25,13 @@ body {
 
 button {
   font-family: variables.$primary-font;
+  font-size: 1.2rem;
 }
 
 input {
   height: 28px;
   font-size: 16px;
-  border: 1px transparent solid;
+  border: 2px transparent solid;
   font-family: variables.$primary-font;
   padding: variables.$spacing-sm;
   border-radius: variables.$border-radius;
@@ -39,6 +39,6 @@ input {
 
   &:focus {
     outline: none;
-    border: 1px variables.$accent solid;
+    border: 2px variables.$accent solid;
   }
 }
